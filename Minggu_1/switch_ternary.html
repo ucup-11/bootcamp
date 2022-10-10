@@ -1,0 +1,19 @@
+<!DOCKTYPE html>
+<html lang="en">
+    <head>
+        <body>
+            <script>
+                var jawab = prompt('kamu beruntung ! silahkan pilih hadiahmu dengan memasukkan angka 1 sampai 5');
+                var hadiah = 
+                    (jawab==="1") ? hadiah ="Tisu" :
+                    (jawab==="2") ? hadiah ="kotak tisu" :
+                    (jawab==="3") ? hadiah ="sticker":
+                    (jawab==="4") ? hadiah ="minyak" :
+                    (jawab==="5") ? hadiah ="uang 50k" :
+                    document.write("<p>Pilih ulang yoi</p>");
+               var hadiah= (jawab === "") ? document.write("<p>Pilih nomer lah</p>") :
+               document.write(`<h2> selamat kamu dapet ${hadiah}</h2>`);
+            </script>
+        </body>
+    </head>
+</html>
