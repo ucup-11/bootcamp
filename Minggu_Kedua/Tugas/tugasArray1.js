@@ -10,10 +10,10 @@ for(let index in barang){
 
 console.log(indexArray("buku"))
 
-function indexArray1(j){
-    for (let i = 0 ; i < barang.length ; i ++){
-        if ( barang [i] == j  ){
-            return i;
+function indexArray1(ValueArray){
+    for (let indeks = 0 ; indeks < barang.length ; indeks ++){
+        if ( barang [indeks] == ValueArray  ){
+            return indeks;
         }
     }
 }

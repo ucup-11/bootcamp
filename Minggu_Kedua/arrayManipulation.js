@@ -1,18 +1,18 @@
 let buah = ['Semangka' , 'Durian', 'Mangga'];
 //console.log(buah);
 
-// //push array
+// //push array nambah terakhir
 // buah.push('Nanas');
 // console.log(buah);
 
-// //pop array
+// //pop array dihapus terakhir filo
 // buah.pop();
 // console.log(buah);
 
 // buah.splice(1,2);
 //console.log(buah);
 
-// shift
+// shift hapus dari depan unshift fifo
 // buah.shift();
 // console.log(buah);
 
@@ -29,4 +29,10 @@ let buah = ['Semangka' , 'Durian', 'Mangga'];
 // for(let array of buah){
 //     console.log(array);
 // }
+
+//cari index suatu array
+// ["buku" , "pulpen", "penggaris"]
+
+// unshift 
+
 
