@@ -18,5 +18,8 @@ const mapArray3 = array.map(function (i){
 });
 console.log(mapArray3);
 
-const mapArray4 = array.map(x => x **10 + 11);
+const mapArray4 = array.map((x)=>{
+    let c = 12
+    return x**10 + c 
+});
 console.log(mapArray4);
