@@ -1,22 +1,19 @@
-let nik = [
-];
-
-let nama = [
-   
-];
-
-let umur = [
-  
+let data = [
+    {
+        nama : 'Ahmad',
+        nik: '12435',
+        age: 20,
+    },
 ];
 
 function tampil() {
     let tabel = document.getElementById("tabel");
     tabel.innerHTML = "<tr><th>No</th><th>NIK</th><th>NAMA</th><th>UMUR</th><th>ACTION</th><th>Sorting</th></tr>";
-    for (let i = 0; i < nik.length; i++) {
+    for (let i = 0; i < data.length; i++) {
         let btnEdit = "<button class ='btn-edit' href = '#' onclick = 'edit (" + i + ")'>Edit</button>";
         let btnHapus = "<button class = 'btn-hapus' href = '#' onclick = 'hapus (" + i + ")'>Hapus</button>";
         j = i + 1;
-        tabel.innerHTML += "<tr><td>" + j + "</td><td>" + nik[i] + "</td><td>" + nama[i] + "</td><td>" + umur[i] + "</td><td>" + btnEdit + "" + btnHapus + "</td ></tr > ";
+        tabel.innerHTML += "<tr><td>" + j + "</td><td>" + nik[i].nik + "</td><td>" + nama[i].nama + "</td><td>" + umur[i].age + "</td><td>" + btnEdit + "" + btnHapus + "</td ></tr > ";
     }
 }
 
