@@ -32,16 +32,12 @@ abs(-5);
 
 // greater_or_equal(7, 4);
 
-let is_good_enough= (guess, x) =>abs(square(guess) - x) < 0.001;
-
-let improve = (guess, x) => average(guess, x / guess);
-
 let sqrt_iter=(guess, x) => is_good_enough(guess, x) ? guess : sqrt_iter(improve(guess, x), x);
 sqrt_iter(3, 25);
 
+let improve = (guess, x) => average(guess, x / guess);
+
 improve(3, 25);
-
-
 
 is_good_enough(1.41, 2);
 
