@@ -2,7 +2,7 @@ h1 {
     text-align: center;
 }
 
-.form-tambah {
+form{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -65,7 +65,7 @@ h1 {
     padding: 20px;
 }
 
-#tabel {
+#dataList {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     text-align: center;
@@ -74,7 +74,7 @@ h1 {
 
 #tabel td,
 #tabel th {
-    border: 5px solid rgb(52, 22, 161);
+    border: 1px solid #ddd;
     padding: 8px;
 }
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Post Test CURD</title>
+    <title>JavaScript Post Test CRUD</title>
 </head>
 <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -14,11 +14,21 @@
     <div class="box">
         <fieldset>
             <legend>Input Data Baru</legend>
-            <input class="form-tambah" type="text" name="nik" placeholder="NIK..." />
-            <input class="form-tambah" type="text" name="nama" placeholder="Nama..." />
-            <input class="form-tambah" type="text" name="umur" placeholder="Umur..." />
+            <input class="form-tambah" type="text" id="nik" placeholder="NIK..." />
+            <input class="form-tambah" type="text" id="nama" placeholder="Nama..." />
+            <input class="form-tambah" type="text" id="umur" placeholder="Umur..." />
             <input class="btn-tambah" type="button" onclick="tambah()" value="Tambah" />
         </fieldset>
+        <div class="dropdown">
+            <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sort Data
+            </a>
+            
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" onclick="sortData('ascending')">Ascending</a></li>
+                <li><a class="dropdown-item" href="#" onclick="sortData('descending')">Descending</a></li>
+            </ul>
+        </div>
 
         <table id="tabel"></table>
     </div>

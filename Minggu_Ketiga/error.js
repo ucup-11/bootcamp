@@ -3,11 +3,18 @@ function getErrorInObject(){
         nonExistentFunction();
     }
     catch (errorVariable){
+        const {
+            name,message, stack
+        } = errorVariable;
+
         return {
-            nama: errorVariable.name,
-            pesan: errorVariable.message,
-            susunan: errorVariable.stack
+            name,message,stack
         }
+        // return {
+        //     nama: errorVariable.name,
+        //     pesan: errorVariable.message,
+        //     susunan: errorVariable.stack
+        // }
     }
 }
 

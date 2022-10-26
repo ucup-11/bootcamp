@@ -13,3 +13,5 @@ console.log({
     person,
     newPerson
 });
+
+//!purefunction

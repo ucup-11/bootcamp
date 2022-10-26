@@ -2,11 +2,11 @@ function doIt(){
     try {
         return 'from try block';
     }
-    catch {
+    catch (e) {
         return 'from catch block';
     }
     finally {
-        return 'from finally block'
+        return 'from finally block';
     }
 }
 

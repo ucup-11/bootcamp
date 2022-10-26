@@ -1,6 +1,6 @@
 try {
     nonExistentFunction();
 }
-catch (errorVariable){
-    console.log(errorVariable);
+catch{
+   throw ' errorgh ';
 }

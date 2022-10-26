@@ -6,6 +6,6 @@ function getRectArea(width, height) {
 
 try {
     getRectArea(3, 'A');
-}catch(e){
-    console.error(e);
+}catch (e){
+     console.error(e);
 }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        JavaScript CRUD 
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    
+	<h1><center>JavaScript CRUD</center></h1>
+	<hr>
+    <form>
+        <fieldset>
+       <div class="mb-3">
+            <label for="inputNIK" class="formData">NIK</label>
+            <input type="text" name="nik" id="nik" placeholder="Input NIK....">
+        </div>
+        <div>
+            <label for="inputNama" class="formData">Nama</label>
+            <input type="text" name="nama" id="nama" placeholder="Input Nama....">
+        </div>
+        <div>
+            <label for="inputUmur" class="formData">Umur</label>
+            <input type="text" name="age" id="age">
+        </div>
+        <div class="d-grid gap-2 d-md-block"></div>
+            <input class="btn btn-outline-primary" type="button" onclick="tambahData()" value="Tambah" >
+        <div class="dropdown">
+            <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sort Data
+            </a>
+            
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" onclick="sortData('ascending')">Ascending</a></li>
+                <li><a class="dropdown-item" href="#" onclick="sortData('descending')">Descending</a></li>
+            </ul>
+        </fieldset>
+        </div>
+                    
+    </form>
+		</div>
+		<br>
+		<div class = "data-table"></div>
+                <table class="list" id="dataList">
+                    <thead>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">NIK</th>
+                            <th scope="col">Nama</th>
+                            <th scope="col">Umur</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id = "printData">
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -12,5 +12,4 @@ let sortInt = (arr) => {
     }
     console.log(arr);
 }
-
 sortInt(arr);
