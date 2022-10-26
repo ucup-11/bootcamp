@@ -49,29 +49,29 @@ const btn = document.querySelector('.btn')
 
 
 btn.addEventListener('click', () => {
-    return new Promise(function (resolve, reject) {
+    return new Promise ((resolve) => {
         resolve()
     })
     .then(() => {
         setTimeout(() => {
             first.style.color ="red"
         }, 1000)
-        return new Promise(function (resolve){
+        return new Promise((resolve) => {
           resolve()  
         })
     })
     .then(() => {
         setTimeout(() => {
             second.style.color =  "blue"
-        }, 4000)
-        return new Promise(function (resolve) {
+        }, 1000)
+        return new Promise((resolve) => {
             resolve()
         })
     })
     .then(() => {
         setTimeout(() => {
             third.style.color = "green"
-        }, 6000)
+        }, 1000)
     })
 })
 
@@ -106,3 +106,15 @@ btn.addEventListener('click', () => {
 //                 resolve()
 //                 , 2000)
 //             }
+
+btn.addEventListener('click' , () =>{
+    setTimeout(() =>{
+        first.style.color = 'red'
+        setTimeout(()=>{
+            second.style.color = 'blue'
+            setTimeout(()=>{
+                third.style.color = 'green'
+            },2000)
+        },3000)
+    },1000)
+});
