@@ -5,7 +5,7 @@ function tampilData() {
     (async ()=>{
         const response = await fetch ('http://104.248.154.192:3005/person');
         const readData = await response.json();
-        const dataUser = readData.data
+        const dataUser = readData.data;
         tBody.innerHTML = "";
 
     for (let i in dataUser){

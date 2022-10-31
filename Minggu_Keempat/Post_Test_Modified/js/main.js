@@ -1,7 +1,8 @@
-import * as edit from './editData.js';
-import * as tambah from './addData.js';
-import * as hapus from './delData.js';
-import * as tampil from './tampilData.js';
+// import { tampilData } from "./tampilData";
+
+// document.addEventListener("DOMContentLoaded", (event)=> {
+//     tampilData();
+// });
 
 
 //http://104.248.154.192:3005/person

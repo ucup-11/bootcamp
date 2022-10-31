@@ -18,7 +18,7 @@ function tambahData() {
         const response = await fetch ('http://104.248.154.192:3005/person', {
             method: 'POST',
             headers: {
-                'Accept':'application/json',
+                Accept:'application/json',
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({nik: objNIK, nama: objNama, alamat: objAge}),
@@ -42,4 +42,4 @@ function tambahData() {
     //     }
     // );
 
-export {tambahData};
+//export {tambahData};
